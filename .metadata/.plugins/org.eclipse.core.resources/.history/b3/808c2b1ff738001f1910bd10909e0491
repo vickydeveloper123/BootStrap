@@ -1,0 +1,8 @@
+package com.example.demo.employeedetails;
+
+public class Employee {
+	
+	
+	private Integer employeeId;
+
+}

@@ -1,0 +1,40 @@
+package com.bank1;
+
+public class BankAccount2  implements BankAccount{
+
+	
+	
+	private String userName;
+	private String userPassword;
+	private BankAcount1  bankAccount;
+	
+	public BankAccount2() {
+		System.out.println("   Bank Account got generated  ....");
+	}
+	
+	
+	public BankAccount2(String userName, String userPassword, double intialBalance) {
+		super();
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.bankAccount = bankAccount;
+	}
+
+
+	@Override
+	public void deposit(double amount) {
+		
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+	
+
+}

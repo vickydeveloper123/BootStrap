@@ -1,0 +1,23 @@
+package com.bank1;
+
+public class BankAcount1 implements BankAccount {
+
+	public double balance;
+	
+
+	@Override
+	public void deposit(double amount) {
+		
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+
+}

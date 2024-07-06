@@ -1,0 +1,32 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.example.demo.employeedetails.Employee;
+import com.example.demo.employeedetails.EmployeeDao;
+
+@SpringBootApplication
+public class SqlhqlApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext run = SpringApplication.run(SqlhqlApplication.class, args);
+		EmployeeDao bean = run.getBean(EmployeeDao.class);
+		System.out.println("Total bean count ="+bean);
+		bean.getClass().getName();
+		System.out.println("  Sucessfully connected to the data base.... ");
+		
+		Employee employee1=new Employee(111, "Dora Sri Vignesh", "Software Architect", "1234744", "dora@gmail.com", "Male", "Nellore");
+		
+		Employee employee2=new Employee(111, "Dora Sri Vignesh", "Software Architect", "1234744", "dora@gmail.com", "Male", "Nellore");
+
+		Employee employee3=new Employee(111, "Dora Sri Vignesh", "Software Architect", "1234744", "dora@gmail.com", "Male", "Nellore");
+
+		Employee employee4=new Employee(111, "Dora Sri Vignesh", "Software Architect", "1234744", "dora@gmail.com", "Male", "Nellore");
+
+		Employee employee5=new Employee(111, "Dora Sri Vignesh", "Software Architect", "1234744", "dora@gmail.com", "Male", "Nellore");
+
+	}
+
+}

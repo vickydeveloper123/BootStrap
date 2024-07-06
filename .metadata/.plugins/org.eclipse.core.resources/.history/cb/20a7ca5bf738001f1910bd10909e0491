@@ -1,0 +1,11 @@
+package com.example.demo.employeedetails;
+
+import jakarta.persistence.Id;
+
+public class Employee {
+	
+	
+	@Id
+	private Integer employeeId;
+
+}

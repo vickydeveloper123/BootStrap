@@ -1,0 +1,24 @@
+package com.bank;
+
+public class SecuredBanking  implements BankAccount{
+	
+	private String accountUserName;
+	private String password;
+	private BankAccount1 bankaccount;
+
+	@Override
+	public void deposit(double amount) {
+		
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+
+}

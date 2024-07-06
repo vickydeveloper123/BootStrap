@@ -1,0 +1,22 @@
+package com.bank1;
+
+import java.util.Scanner;
+
+public class ProxyRunner {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println(" Please enter user name ");
+		String userName=scanner.next();
+		System.out.println(" Please enter your password  ");
+		String userPassword=scanner.next();
+		
+		BankAccount2 balance=new BankAccount2("", "Dora@123",1000);
+		balance.deposit(5000);
+		balance.getBalance();
+		System.out.println("  Your current balance ="+balance.getBalance());
+		
+	}
+
+}

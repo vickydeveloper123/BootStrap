@@ -1,0 +1,22 @@
+package com.example.demo.employeedetails;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeDao extends JpaRepository<Employee, Integer> {
+
+	@Query(value = "From Employee")
+	public List<Employee> getAllUsersHQL();
+
+	@Query(value = "from Employee where employeeNativeLocation=:location")
+	public List<Employee> getAllEmployersBasedOnLocation(String location);
+
+	@Query(value = "select * from Employee_Information where employeeGender=:gender", nativeQuery = true)
+	public List<Employee> getAllEmployersDataBasedOnGender(String gender);
+
+}

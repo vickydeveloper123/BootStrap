@@ -1,0 +1,31 @@
+package com.bank;
+
+public class BankAccount1  implements BankAccount{
+	
+	private double balance;
+	
+	public BankAccount1() {
+		
+		System.out.println("  Your account is sucessfully stored ");
+	}
+
+	@Override
+	public void deposit(double amount) {
+		
+		System.out.println("  Thanks for choosing  deposit Option  ");
+		
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		
+		System.out.println("    Thanks for choosing withdraw option  ");
+		
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.example.demo.employeedetails;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedQuery;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+
+
+@NamedQuery(
+		name="FetchingEmployersRoles", query = " from Employee  where employeRole=:employersRole"
+		)
+@Entity
+@Table(name="Employee_Information")
+public class Employee {
+	
+	
+	@Id
+	private Integer employeeId;
+	
+	
+	private String employeName;
+	
+	private String employeRole;
+	
+	private String employeSalary;
+	
+	private String employeEmail;
+	
+	private String employeeGeder;
+	
+	private String employeeNativeLocation;
+
+}

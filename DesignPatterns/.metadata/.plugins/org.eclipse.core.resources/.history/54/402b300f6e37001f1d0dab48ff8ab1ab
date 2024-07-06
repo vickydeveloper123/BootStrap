@@ -1,0 +1,42 @@
+package com.bank;
+
+public class SecuredBanking implements BankAccount {
+
+	private String accountUserName;
+	private String password;
+	private BankAccount1 bankaccount;
+
+	public SecuredBanking() {
+
+		System.out.println("   Secured Banking constructor got generated ...");
+	}
+	
+	
+	
+
+	public SecuredBanking(String accountUserName, String password, double initialBalance) {
+		super();
+		this.accountUserName = accountUserName;
+		this.password = password;
+		this.bankaccount = new BankAccount1(initialBalance);
+	}
+
+
+
+
+	@Override
+	public void deposit(double amount) {
+
+	}
+
+	@Override
+	public void withdraw(double amount) {
+
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+
+}

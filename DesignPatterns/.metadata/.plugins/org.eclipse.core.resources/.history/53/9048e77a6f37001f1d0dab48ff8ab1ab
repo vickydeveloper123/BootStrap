@@ -1,0 +1,39 @@
+package com.bank1;
+
+public class BankAcount1 implements BankAccount {
+
+	public double balance;
+	
+	public BankAcount1() {
+		
+		System.out.println("    Bank Details from the customer sucessfully executed ....");
+	}
+	
+	
+
+	public BankAcount1(double intialBalance) {
+		super();
+		this.balance = intialBalance;
+	}
+
+
+
+	@Override
+	public void deposit(double amount) {
+		
+		balance+=amount;
+		System.out.println("  Deposit amount ->"+amount +"   Current balance = "+balance);
+		
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		
+	}
+
+	@Override
+	public double getBalance() {
+		return 0;
+	}
+
+}
