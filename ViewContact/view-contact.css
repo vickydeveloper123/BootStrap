@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, "sans-sarif";
+}
+
+.section,
+div {
+  background-color: aquamarine;
+}
+
+.view-cards-section,
+section {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
